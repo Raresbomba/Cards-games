@@ -8,7 +8,7 @@ char transformare(char n, int nr) {
     n = 'a';
     break;
   case 10:
-    n = "1" + "0";
+    n = '10';
     break;
   case 11:
     n = 'j';

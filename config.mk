@@ -6,7 +6,6 @@ STATIC  = 0
 LDFLAGS =
 CXXFLAGS =\
 	-Wno-padded \
-	-Wno-disabled-macro-expansion \
 	-pedantic
 
 # Sources / Results
