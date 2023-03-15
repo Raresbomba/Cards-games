@@ -12,8 +12,6 @@ CXXFLAGS =\
 # Sources / Results
 SRC =\
 	src/main.cpp \
-	src/suma.cpp \
-	src/dif.cpp \
 	src/carti_de_joc.cpp 
 LIBDIR =
 LIB =\
