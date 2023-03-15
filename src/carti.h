@@ -15,7 +15,7 @@ typedef struct {
 
 /* Prototpurile functiilor */
 
-char transformare(char n, int nr);
+char transformare(int n, int nr);
 void ordonare_init(carte *carti);
 void amestecare(carte *carti);
 void afisare(carte *carti);

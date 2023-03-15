@@ -1,23 +1,25 @@
 #include "carti.h"
 #include <cmath>
 #include <iostream>
+/*IMPORTANT NOTICE: 10=0
+THIS IS NOT A BUG, IT WON'T FIX, WE CHOSE TO MAKE IT LIKE THIS <3 :))*/
 using namespace std;
-char transformare(char n, int nr) {
+char transformare(int n, int nr) {
   switch (nr) {
   case 1:
-    n = 'a';
+    n = 'A';
     break;
   case 10:
-    n = '10';
+    n = '0';
     break;
   case 11:
-    n = 'j';
+    n = 'J';
     break;
   case 12:
-    n = 'q';
+    n = 'Q';
     break;
   case 13:
-    n = 'k';
+    n = 'K';
     break;
 
   default:
@@ -27,7 +29,7 @@ char transformare(char n, int nr) {
 }
 void ordonare_init(carte *carti) {
   int i, n = 53;
-  char aux;
+   int aux;
   for (i = 1; i <= 13; i++) {
     aux = i + '0';
     carti[i].val = transformare(aux, i);
@@ -57,6 +59,6 @@ void amestecare(carte *carti) {
 }
 void afisare(carte *carti) {
   for (int i = 1; i <= 52; i++) {
-    cout << carti[i].val << ' ' << carti[i].simbol << endl;
+    printf("%c %c \n",carti[i].val,carti[i].simbol);
   }
 }
