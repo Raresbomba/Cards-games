@@ -6,14 +6,11 @@ STATIC  = 0
 LDFLAGS =
 CXXFLAGS =\
 	-Wno-padded \
-	-Wno-disabled-macro-expansion \
 	-pedantic
 
 # Sources / Results
 SRC =\
 	src/main.cpp \
-	src/suma.cpp \
-	src/dif.cpp \
 	src/carti_de_joc.cpp 
 LIBDIR =
 LIB =\
