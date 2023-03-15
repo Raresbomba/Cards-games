@@ -1,10 +1,32 @@
+/*  This file is part of our cards game project.
+ * (https://github.com/Raresbomba/Cards-games)
+ *
+ * Copyright (c) 2023 Rares-Alexandru Chirita <zzrareszz@gmail.com>
+ * Copyright (c) 2023 Ty3r0X <ty3r0x@chaox.ro>
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 #include "carti.h"
 #include <cmath>
 #include <iostream>
-/*IMPORTANT NOTICE: 10=0
-THIS IS NOT A BUG, IT WON'T FIX, WE CHOSE TO MAKE IT LIKE THIS <3 :))*/
 using namespace std;
 char transformare(int n, int nr) {
+
+  /* IMPORTANT NOTICE: 10=0
+   * THIS IS NOT A BUG, WONTFIX,
+   * WE CHOSE TO MAKE IT LIKE THIS <3 :))*/
   switch (nr) {
   case 1:
     n = 'A';
@@ -29,7 +51,7 @@ char transformare(int n, int nr) {
 }
 void ordonare_init(carte *carti) {
   int i, n = 53;
-   int aux;
+  int aux;
   for (i = 1; i <= 13; i++) {
     aux = i + '0';
     carti[i].val = transformare(aux, i);
@@ -59,6 +81,6 @@ void amestecare(carte *carti) {
 }
 void afisare(carte *carti) {
   for (int i = 1; i <= 52; i++) {
-    printf("%c %c \n",carti[i].val,carti[i].simbol);
+    printf("%c %c \n", carti[i].val, carti[i].simbol);
   }
 }
